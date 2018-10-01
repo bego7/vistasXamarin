@@ -10,4 +10,9 @@
     <string name="total_ejemplo">$80</string>
     <string name="importe_ejemplo">$80</string>
     <string name="cambio_ejemplo">$0</string>
+    <string name="destino">AHUEJO 18:35\nAMPERSA\nPULLMAN\nPRIMERA CLASE\n</string>
+    <string name="adulto">1 ADULTO</string>
+    <string name="asiento">ASIENTOS</string>
+    <string name="dinero">$80</string>
+    <string name="imprimir_boleto">IMPRIMIR BOLETO</string>
 </resources>
