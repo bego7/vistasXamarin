@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">vistasXamarin</string>
+    <string name="destino">AHUEJO 18:35\nAMPERSA\nPULLMAN\nPRIMERA CLASE\n</string>
+    <string name="adulto">1 ADULTO</string>
+    <string name="asiento">ASIENTOS</string>
+    <string name="dinero">$80</string>
+    <string name="imprimir_boleto">IMPRIMIR BOLETO</string>
 </resources>
