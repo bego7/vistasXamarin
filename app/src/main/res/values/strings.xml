@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">vistasXamarin</string>
+    <string name="realizar_pago">Realizar Pago</string>
+    <string name="pago_efectivo">Pago en efectivo</string>
+    <string name="pago_tarjeta">Pago con tarjeta</string>
+    <string name="pago_ho">Ho/Ca</string>
+    <string name="pago_total">Total</string>
+    <string name="pago_importe">Importe</string>
+    <string name="pago_cambio">Su cambio</string>
+    <string name="total_ejemplo">$80</string>
+    <string name="importe_ejemplo">$80</string>
+    <string name="cambio_ejemplo">$0</string>
 </resources>
