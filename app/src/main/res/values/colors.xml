@@ -5,6 +5,9 @@
     <color name="colorAccent">#D81B60</color>
     <color name="azulEr">#0e0b4e</color>
     <color name="VERDE">#0113341f</color>
+    <color name="white">#fff</color>
+    <color name="red">#E64A19</color>
+    <color name="primaryGrey">#757575</color>
     <color name="OtroAzulER">#120d82</color>
     <color name="AzulClaroER">#6a72cd</color>
 </resources>
