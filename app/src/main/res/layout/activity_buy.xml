@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/numeroBoletos"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/desglose"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/Adulto"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <TextView
+                    android:id="@+id/tituloAdulto"
+                    android:layout_width="0dp"
+                    android:layout_height="26dp"
+                    android:text="Adulto $80"
+                    android:textColor="@color/azulEr"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/adultoSide"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:text="Adulto: $80"
+                    android:textColor="@color/azulEr"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/menor75"
+                    app:layout_constraintTop_toBottomOf="@+id/tituloAdulto" />
+
+                <Button
+                    android:id="@+id/masAdultos"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:text="+"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/menosAdultos"
+                    app:layout_constraintEnd_toStartOf="@+id/menor75"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/menor50"
+                    app:layout_constraintTop_toTopOf="@+id/menosAdultos"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <EditText
+                    android:id="@+id/numAdultos"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/azulEr"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="1"
+                    android:textColor="@android:color/background_light"
+                    app:layout_constraintBottom_toBottomOf="@+id/adultoSide"
+                    app:layout_constraintEnd_toStartOf="@+id/menor50"
+                    app:layout_constraintStart_toStartOf="@+id/menor25"
+                    app:layout_constraintTop_toTopOf="@+id/adultoSide"
+                    tools:paddingLeft="5dp" />
+
+                <Button
+                    android:id="@+id/menosAdultos"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:text="-"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/numAdultos"
+                    app:layout_constraintEnd_toStartOf="@+id/menor25"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/numAdultos" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/menor25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.26" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/menor50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.5" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/menor75"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.75" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/Menor"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <TextView
+                    android:id="@+id/tituloMenor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Menores $60"
+                    android:textColor="@color/azulEr"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/menosMenores"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:text="+"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/masMenores"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                    app:layout_constraintStart_toStartOf="@+id/guideline6"
+                    app:layout_constraintTop_toTopOf="@+id/masMenores" />
+
+                <EditText
+                    android:id="@+id/numMenores"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/azulEr"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="3dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:text="0"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/menorSide"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toTopOf="@+id/menorSide" />
+
+                <Button
+                    android:id="@+id/masMenores"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:text="-"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/numMenores"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/numMenores" />
+
+                <TextView
+                    android:id="@+id/menorSide"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:text="Menor: $60"
+                    android:textColor="@color/azulEr"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline7"
+                    app:layout_constraintTop_toBottomOf="@+id/tituloMenor" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.25" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.5" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.75" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/Senectud"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <TextView
+                    android:id="@+id/tituloSenectud"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Senectud $60"
+                    android:textColor="@color/azulEr"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/senectudSide"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:text="Senectud: $60"
+                    android:textColor="@color/azulEr"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline10"
+                    app:layout_constraintTop_toBottomOf="@+id/tituloSenectud" />
+
+                <Button
+                    android:id="@+id/masSenectud"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline10"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/guideline9"
+                    tools:layout_editor_absoluteY="35dp" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.2579365" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.5" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.75" />
+
+                <Button
+                    android:id="@+id/button17"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline8"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="35dp" />
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/azulEr"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="3dp"
+                    android:text="0"
+                    android:textColor="@android:color/background_light"
+                    app:layout_constraintBottom_toBottomOf="@+id/senectudSide"
+                    app:layout_constraintEnd_toStartOf="@+id/masSenectud"
+                    app:layout_constraintStart_toEndOf="@+id/button17"
+                    app:layout_constraintTop_toTopOf="@+id/senectudSide" />
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ScrollView
+        android:id="@+id/desglose"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/desgloceAdulto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="Adulto:"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="87dp"
+                tools:layout_editor_absoluteY="326dp" />
+
+            <EditText
+                android:id="@+id/nombreAdulto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/azulEr"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="VALIDO AL PORTADOR"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <TextView
+                android:id="@+id/desgloceMenor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="Menor:"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="87dp"
+                tools:layout_editor_absoluteY="326dp" />
+
+            <TextView
+                android:id="@+id/desgloceSenectud"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="Senectud;"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="87dp"
+                tools:layout_editor_absoluteY="326dp" />
+
+            <TextView
+                android:id="@+id/desgloceProfesor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="Profesor:"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="87dp"
+                tools:layout_editor_absoluteY="326dp" />
+
+            <TextView
+                android:id="@+id/desgloceEstudiante"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="Estudiante:"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="87dp"
+                tools:layout_editor_absoluteY="326dp" />
+
+            <TextView
+                android:id="@+id/desgloceEspecial"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="Especial:"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="87dp"
+                tools:layout_editor_absoluteY="326dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/holo_green_light"
+        android:text="Confirmar"
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desglose" />
+
+</android.support.constraint.ConstraintLayout>
